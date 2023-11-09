@@ -1,16 +1,12 @@
 class Box3d extends Box {
 
-	int height;
-
-	Box3d(int height,int length,int breadth){
+	private int height;
+	public Box3d(int length,int breadth,int height){
 		super(length,breadth);
 		this.height=height;
 	}
-
-	
-
-	void findVolume(){
-		int volume=height*length*breadth;
-		System.out.println("Volume : "+volume);
+	public int findVolume(){
+		int volume=super.findArea()*height;
+		return volume;
 	}
 }

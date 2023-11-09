@@ -1,24 +1,19 @@
-class Box{
-	int length;
-	int breadth;
-	int height;
+public class Box{
+	private int length;
+	private int breadth;
 
 
-	Box(int length,int breadth,int height){
+	public Box(int length,int breadth){
 		this.length=length;
 		this.breadth=breadth;
-		this.height=height;
 	}
 
-	void findArea(){
+	public int findArea(){
 		int area=length*breadth;
-		System.out.println("Area : "+area);
+		return area;
 	}
 
-	void findVolume(){
-		int volume=height*length*breadth;
-		System.out.println("Volume : "+volume);
-	}
+	
 
 	
 }

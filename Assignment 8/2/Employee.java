@@ -1,17 +1,18 @@
 class Employee extends Person{
 
-	int empNo;
-	String department;
-	double salary;
+	private int empNo;
+	private String department;
+	private double salary;
 
-	@Override
-	void setData(int empNo,String department,double salary){
+	public void setData(String name,long phoneNo,String email,int empNo,String department,double salary){
+		this.name=name;
+		this.phoneNo=phoneNo;
+		this.email=email;
 		this.empNo=empNo;
 		this.department=department;
 		this.salary=salary;
 	}
-	@Override
-	void getData(){
+	public void getData(){
 		super.getData();
 		System.out.println("Employee No : "+empNo);
 		System.out.println("Department : "+department);

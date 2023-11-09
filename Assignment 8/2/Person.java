@@ -1,15 +1,15 @@
 class Person{
-	String name;
-	long phoneNo;
-	String email;
+	protected String name;
+	protected long phoneNo;
+	protected String email;
 	
-	void setData(String name,long phoneNo,String email){
+	public void setData(String name,long phoneNo,String email){
 		this.name=name;
 		this.phoneNo=phoneNo;
 		this.email=email;
 	}
 
-	void getData(){
+	public void getData(){
 		System.out.println("Name : "+name);
 		System.out.println("Phone No : "+phoneNo);
 		System.out.println("email : "+email);
